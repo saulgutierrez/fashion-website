@@ -1,0 +1,719 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* Variables CSS */
+
+:root {
+    --primary-font: 'Italiana', serif;
+    --secondary-font: 'Montserrat', sans-serif;
+    --main-bg-color: #c3d8d3;
+    --acent-bg-color: #666f80;
+    --primary-text-color: #1b1b1b;
+    --secondary-text-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--secondary-font);
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    background: var(--main-bg-color);
+    overflow-x: hidden;
+}
+
+/* Inicio */
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inicio header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 80px;
+    z-index: 10000;
+    transition: 0.3s;
+}
+
+.logo {
+    font-family: var(--primary-font);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.inicio header .nav {
+    display: flex;
+    list-style: none;
+}
+
+.inicio header .nav li {
+    position: relative;
+    padding: 20px;
+}
+
+.inicio header .nav li:hover::before {
+    content: "";
+    width: 50px;
+    height: 30px;
+    background: var(--acent-bg-color);
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    transition: 0.4s;
+    z-index: -1;
+}
+
+.inicio header .nav li a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    transition: 0.4s;
+}
+
+.inicio header .nav li a:hover {
+    color: var(--secondary-text-color);
+}
+
+.inicio .contenido {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.inicio .contenido h2 {
+    font-family: var(--primary-font);
+    font-size: 5em;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.inicio .contenido h2 span {
+    color: var(--secondary-text-color);
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.inicio .container-imagenes {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.inicio .container-imagenes::before {
+    content: 'Fashion';
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 25em;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
+
+.inicio .container-imagenes img {
+    position: relative;
+    width: 200px;
+    height: auto;
+    filter: grayscale(80%);
+    transition: 0.4s;
+}
+
+.inicio .container-imagenes img:hover {
+    filter: grayscale(0);
+}
+/* Seccion Ultima Coleccion */
+
+.ultima-coleccion {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 250px 0 300px;
+}
+
+.ultima-coleccion .col-1 {
+    position: relative;
+    left: 250px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+}
+
+.titulo {
+    color: var(--primary-text-color);
+    font-size: 1.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.titulo::before {
+    content: '';
+    width: 70px;
+    height: 1px;
+    background: var(--primary-text-color);
+    position: absolute;
+    top: 9px;
+    left: 0;
+}
+
+.ultima-coleccion .col-1 h3 {
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.ultima-coleccion .col-1 p {
+    line-height: 1.5;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.boton {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: var(--acent-bg-color);
+    padding: 15px 35px;
+    color: var(--secondary-text-color);
+    transition: 0.4s;
+}
+
+.boton:hover {
+    color: var(--acent-bg-color);
+    background: var(--secondary-text-color);
+}
+
+.ultima-coleccion .col-2 {
+    position: relative;
+    right: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.ultima-coleccion .col-2 .img-box {
+    position: relative;
+    width: 250px;
+    height: auto;
+}
+
+.ultima-coleccion .col-2 .img-box img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ultima-coleccion .col-2 .img-box:nth-child(1) {
+    transform: translateY(50px);
+}
+
+.ultima-coleccion .col-2 .img-box:nth-child(2) {
+    transform: translateY(-50px);
+}
+
+/* Seccion Tendencias */
+
+.tendencias {
+    position: relative;
+    background: var(--acent-bg-color);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tendencias::before {
+    content: 'Tendencias';
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 18em;
+    opacity: 0.2;
+    bottom: 0;
+    right: 0;
+}
+
+.tendencias .img-box {
+    position: relative;
+    width: 250px;
+    height: 370px;
+    margin: 20px;
+}
+
+.tendencias .img-box img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 1s ease-in-out;
+}
+
+.tendencias .img-box img.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.tendencias .card {
+    width: 300px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--secondary-text-color);
+    z-index: 1;
+    padding: 20px;
+}
+
+.tendencias .card .text-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tendencias .card .text-card p {
+    color: var(--secondary-text-color);
+    font-size: 1.4em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.tendencias .card .text-card p span {
+    font-family: var(--primary-font);
+}
+
+.boton-2 {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: var(--secondary-text-color);
+    padding: 15px 35px;
+    color: var(--acent-bg-color);
+    transition: 0.4s;
+}
+
+.boton-2:hover {
+    color: var(--secondary-text-color);
+    background: var(--primary-text-color);
+}
+
+/* Seccion Newsletter */
+.newsletter {
+    position: relative;
+    width: 100%;
+    padding: 150px 0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter .titulo {
+    text-align: center;
+}
+
+.newsletter .titulo::before {
+    display: none;
+}
+
+.newsletter .texto {
+    width: 650px;
+    text-align: center;
+}
+
+.newsletter .texto h3 {
+    font-family: var(--primary-font);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.newsletter form {
+    display: flex;
+    gap: 20px;
+}
+
+.newsletter form input[type="email"] {
+    outline: none;
+    border: 2px solid var(--acent-bg-color);
+    width: 500px;
+    padding: 10px;
+    background: var(--main-bg-color);
+}
+
+.newsletter form input[type="submit"] {
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    background: var(--primary-text-color);
+    width: 100%;
+    padding: 100px 0 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .enlaces {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 150px;
+}
+
+footer .enlaces .col .logo {
+    color: var(--secondary-text-color);
+}
+
+footer .enlaces .col p {
+    color: var(--secondary-text-color);
+    line-height: 2.5;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+footer .enlaces .col .rrss a {
+    text-decoration: none;
+    margin: 10px 10px 0 0;
+    font-size: 1.5em;
+    color: var(--secondary-text-color);
+}
+
+footer .enlaces .col h4 {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+    text-transform: uppercase;
+}
+
+footer .enlaces .col ul {
+    list-style: none;
+}
+
+footer .enlaces .col ul li {
+    margin-bottom: 10px;
+}
+
+footer .enlaces .col ul li a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+footer .enlaces .col .rrss a:hover,
+footer .enlaces .col ul li a:hover {
+    color: var(--acent-bg-color);
+}
+
+footer .copyright {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .copyright::before {
+    content: "";
+    position: absolute;
+    bottom: 120px;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    opacity: 0.5;
+    background: var(--secondary-text-color);
+}
+
+footer .copyright p {
+    color: var(--secondary-text-color);
+    font-weight: 300;
+}
+
+/* Sticky Menu */
+.inicio header.active {
+    background: rgba(102, 111, 128, 0.7);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Breakpoints */
+
+/* -- Pantallas largas -- */
+@media only screen and (max-width: 1200px) {
+    .ultima-coleccion .col-1 {
+        left: 120px;
+    }
+
+    .ultima-coleccion .col-2 {
+        right: 120px;
+    }
+
+    footer {
+        padding: 100px 100px 50px;
+    }
+
+    footer .copyright::before {
+        bottom: 100px;
+    }
+}
+
+/* -- Laptops -- */
+@media only screen and (max-width: 992px) {
+    .inicio .container-imagenes::before {
+        font-size: 20em;
+    }
+
+    .inicio .container-imagenes img {
+        width: 170px;
+    }
+
+    .ultima-coleccion {
+        padding: 150px 0 200px;
+    }
+
+    .ultima-coleccion .col-1 {
+        left: 100px;
+    }
+
+    .ultima-coleccion .col-2 {
+        right: 100px;
+    }
+
+    .ultima-coleccion .col-2 .img-box {
+        width: 210px;
+    }
+
+    footer {
+        align-items: flex-start;
+    }
+
+    footer .enlaces {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+    }
+}
+
+/* -- Tablets -- */
+@media only screen and (max-width: 768px) {
+    .inicio header {
+        padding: 20px 50px;
+    }
+
+    .inicio header .nav {
+        display: none;
+    }
+
+    .inicio header .nav.active {
+        width: 100%;
+        height: calc(100% - 40px);
+        position: fixed;
+        top: 80px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(102, 111, 128, 0.9);
+
+    }
+
+    .inicio header .nav.active li {
+        padding: 20px;
+    }
+
+    .inicio header .nav li:hover::before {
+        background: var(--main-bg-color);
+    }
+
+    .inicio header .nav.active li a {
+        font-size: 1.5em;
+        color: var(--secondary-text-color);
+    }
+
+    .menuToggle {
+        position: relative;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        background: url('menu.png');
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .menuToggle.active {
+        background: url('close.png');
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        filter: invert(1);
+    }
+
+    .ultima-coleccion {
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    .ultima-coleccion .col-1 {
+        left: 0px;
+    }
+
+    .ultima-coleccion .col-2 {
+        right: 0px;
+    }
+
+    .tendencias .card,
+    .tendencias .img-box {
+        width: 200px;
+        height: 350px;
+    }
+
+    .tendencias .card .text-card p {
+        font-size: 1.2em;
+    }
+
+    .boton-2 {
+        padding: 10px 30px;
+    }
+
+    .newsletter form input[type='email'] {
+        width: 400px;
+    }
+}
+
+/* -- Celulares -- */
+@media only screen and (max-width: 600px) {
+    .inicio .contenido {
+        margin-top: 0px;
+    }
+
+    .inicio .contenido h2 {
+        font-size: 3.5em;
+    }
+
+    .inicio .container-imagenes img {
+        width: 150px;
+        gap: 10px;
+    }
+
+    .tendencias .card,
+    .tendencias .img-box {
+        width: 150px;
+        height: 300px;
+    }
+
+    .tendencias .card .text-card p {
+        font-size: 0.9em;
+    }
+
+    .boton-2 {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+
+    .newsletter .texto {
+        width: 500px;
+    }
+
+    .newsletter form input[type='email'] {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .ultima-coleccion .col-2 .img-box {
+        width: 150px;
+    }
+
+    .tendencias {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .tendencias .card,
+    .tendencias .img-box {
+        width: 250px;
+        height: 370px;
+    }
+
+    .tendencias .card .text-card p {
+        font-size: 1.2em;
+    }
+
+    .boton-2 {
+        font-size: 1.2em;
+        padding: 15px 35px;
+    }
+
+    .newsletter .texto {
+        width: 300px;
+    }
+
+    .newsletter .texto h3 {
+        font-size: 1.7em;
+    }
+
+    .newsletter form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .copyright::before {
+        bottom: 130px;
+    }
+}

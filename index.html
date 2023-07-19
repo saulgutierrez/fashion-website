@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Estilos libreria Remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Fashion Landing Page</title>
+</head>
+<body>
+    <!-- Seccion Inicio -->
+    <section class="inicio">
+        <header>
+            <a href="#" class="logo">Fashion</a>
+            <div class="menuToggle" onclick="toggleMenu()"></div>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">Inicio</a></li>
+                <li><a href="#ultima-coleccion" onclick="toggleMenu()">Coleccion</a></li>
+                <li><a href="#tendencias" onclick="toggleMenu()">Tendencias</a></li>
+                <li><a href="#newsletter" onclick="toggleMenu()">Newsletter</a></li>
+            </ul>
+        </header>
+
+        <div class="contenido">
+            <h2>Encuentra tu <br><span>estilo</span></h2>
+        </div>
+
+        <div class="container-imagenes">
+            <img src="1.jpg" alt="">
+            <img src="2.jpg" alt="">
+            <img src="3.jpg" alt="">
+            <img src="4.jpg" alt="">
+        </div>
+    </section>
+    <!-- Fin Seccion Inicio -->
+
+    <!-- Seccion Ultima Coleccion -->
+    <section class="ultima-coleccion" id="ultima-coleccion">
+        <div class="col-1">
+            <h2 class="titulo">Última Colección</h2>
+            <h3>Colección Spring & Summer</h3>
+            <p>Inspirada en la frescura y la alegría de la temporada, con diseños vibrantes y elegantes que reflejan el espíritu y la energía de la naturaleza.</p>
+            <a href="#" class="boton">Ver más</a>
+        </div>
+        <div class="col-2" id="col-2">
+            <div class="img-box">
+                <img src="5.jpg" alt="" id="img5">
+            </div>
+            <div class="img-box">
+                <img src="6.jpg" alt="" id="img6">
+            </div>
+        </div>
+    </section>
+    <!-- Fin Seccion Ultima Coleccion -->
+
+    <!-- Seccion Tendencias -->
+    <section class="tendencias" id="tendencias">
+        <div class="img-box" id="img-box1">
+            <img src="7.jpg" id="img7" alt="">
+        </div>
+        <div class="card">
+            <div class="text-card">
+                <p>Descubre las últimas tendencias en diseños exclusivos de <span>Fashion</span></p>
+                <a href="#" class="boton-2">Explorar</a>
+            </div>
+        </div>
+        <div class="img-box" id="img-box2">
+            <img src="8.jpg" id="img8" alt="">
+        </div>
+    </section>
+    <!-- Fin Seccion Tendencias -->
+
+    <!-- Seccion Newsletter -->
+    <section class="newsletter" id="newsletter">
+        <h2 class="titulo">Newsletter</h2>
+        <div class="texto">
+            <h3>Suscribete y mantente al tanto de nuestras novedades</h3>
+        </div>
+        <form action="">
+            <input type="email" placeholder="Correo electronico" name="" id="">
+            <input type="submit" value="Suscribir" class="boton">
+        </form>
+    </section>
+    <!-- Fin Seccion Newsletter -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="enlaces">
+            <div class="col">
+                <a href="#" class="logo"> Fashion</a>
+                <p>#222, Lorem ipsum dolor sit amet, St.</p>
+                <div class="rrss">
+                    <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <h4>Descubre</h4>
+                <ul>
+                    <li><a href="#">Colecciones</a></li>
+                    <li><a href="#">Tendencias</a></li>
+                    <li><a href="#">Marcas</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Acerca de</h4>
+                <ul>
+                    <li><a href="#">Nuestra tienda</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Noticias</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#">Envío y devoluciones</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Guía de tallas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Saúl Gutiérrez - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+    <!-- Script Libreria ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <!-- Script Libreria GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- Script Plugin ScrollMagic Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <!-- Script index.js -->
+    <script src="index.js"></script>
+</body>
+</html>
