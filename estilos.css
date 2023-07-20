@@ -663,10 +663,6 @@ footer .copyright p {
         gap: 10px;
     }
 
-    .tendencias {
-        width: 660px;
-    }
-
     .tendencias .card,
     .tendencias .img-box {
         width: 150px;
