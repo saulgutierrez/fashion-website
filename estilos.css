@@ -606,7 +606,7 @@ footer .copyright p {
     }
 
     .inicio .container-imagenes::before {
-        content: 'Fashion';
+        content: '';
         font-family: var(--primary-font);
         text-transform: uppercase;
         position: absolute;
