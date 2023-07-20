@@ -565,7 +565,6 @@ footer .copyright p {
         align-items: center;
         flex-direction: column;
         background: rgba(102, 111, 128, 0.9);
-
     }
 
     .inicio header .nav.active li {
@@ -600,6 +599,21 @@ footer .copyright p {
         background-repeat: no-repeat;
         cursor: pointer;
         filter: invert(1);
+    }
+
+    .inicio .container-imagenes img {
+        width: 130px;
+    }
+
+    .inicio .container-imagenes::before {
+        content: 'Fashion';
+        font-family: var(--primary-font);
+        text-transform: uppercase;
+        position: absolute;
+        font-size: 11em;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
     }
 
     .ultima-coleccion {
@@ -649,6 +663,10 @@ footer .copyright p {
         gap: 10px;
     }
 
+    .tendencias {
+        width: 660px;
+    }
+
     .tendencias .card,
     .tendencias .img-box {
         width: 150px;
@@ -682,6 +700,7 @@ footer .copyright p {
         height: auto;
         flex-direction: column;
         padding: 20px;
+        width: 500px;
     }
 
     .tendencias .card,
@@ -703,6 +722,18 @@ footer .copyright p {
         width: 300px;
     }
 
+    .inicio .container-imagenes::before {
+        content: 'Fashion';
+        font-family: var(--primary-font);
+        text-transform: uppercase;
+        position: absolute;
+        font-size: 3em;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+    }
+
+
     .newsletter .texto h3 {
         font-size: 1.7em;
     }
@@ -715,5 +746,14 @@ footer .copyright p {
 
     footer .copyright::before {
         bottom: 130px;
+    }
+
+    .inicio .container-imagenes img {
+        width: 90px;
+        gap: 10px;
+    }
+
+    .contenido {
+        font-size: 0.8em;
     }
 }
