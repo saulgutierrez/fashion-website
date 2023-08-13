@@ -1,6 +1,6 @@
 # fashion-website
-Boutique website landing page
-Boutique website landing page made with Pure CSS. Includes responsive design using Media Queries, a sticky bar, scroll effects, hover effects, and several sections like Collections, Trends and newsletter. With sweet scroll and cool desing, using modern CSS standars like flexbox layout.
+Boutique shop landing page
+Boutique shop landing page made with Pure CSS. Includes responsive design using Media Queries, a sticky bar, scroll effects, hover effects, and several sections like Collections, Trends and newsletter. With sweet scroll and cool desing, using modern CSS standars like flexbox layout.
 
 Technologies used:
 
