@@ -659,8 +659,16 @@ footer .copyright p {
     }
 
     .inicio .container-imagenes img {
-        width: 150px;
-        gap: 10px;
+        width: 100px;
+    }
+
+    .ultima-coleccion .col-2 .img-box img {
+        width: 160px;
+    }
+
+    .tendencias {
+        width: 100%;
+        max-width: 600px;
     }
 
     .tendencias .card,
@@ -679,11 +687,21 @@ footer .copyright p {
     }
 
     .newsletter .texto {
-        width: 500px;
+        width: 90%;
+    }
+
+    .newsletter form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .newsletter form input[type='email'] {
         width: 300px;
+    }
+
+    footer .copyright::before {
+        bottom: 130px;
     }
 }
 
