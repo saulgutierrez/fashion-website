@@ -12,3 +12,5 @@ Technologies used:
 <li>ScrollAnimation</li>
 <li>GSAP</li>
 <li>RemixIcon</li>
+
+![image](https://github.com/saulgutierrez/fashion-website/assets/62368834/90aa46ed-f3e2-49c5-bd77-93045878a379)
